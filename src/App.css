@@ -1,0 +1,89 @@
+/* Base reset and font smoothing */
+body {
+  margin: 0;
+  background-color: #f4f6f8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #212529;
+  font-size: 12.5px; /* smaller default */
+  line-height: 1.3;  /* tighter line height */
+}
+
+/* Prevent horizontal scroll */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Code font */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+/* Smooth animations */
+* {
+  transition: all 0.2s ease;
+}
+
+/* Sidebar tweaks */
+.sidenav {
+  background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+  min-height: 90vh;
+  padding: 0.6rem;
+  border-right: 1px solid #dee2e6;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.sidenav .nav-link {
+  color: #333;
+  padding: 0.35rem 0.75rem; /* smaller padding */
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12.5px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.sidenav .nav-link:hover {
+  background-color: #e2e6ea;
+  transform: translateX(3px);
+}
+
+.sidenav .nav-link.active {
+  background-color: #6c757d; /* medium grey */
+  color: white !important;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(108, 117, 125, 0.3);
+}
+
+.sidenav .nav-link.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  height: 80%;
+  width: 3px;
+  background-color: white;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Table tweaks */
+.table {
+  font-size: 11.5px;
+}
+
+.table th, .table td {
+  padding: 4px 6px; /* very compact cells */
+  vertical-align: middle;
+}
+
+/* Icon spacing */
+.sidenav .nav-link i {
+  margin-right: 6px;
+  font-size: 14px; /* keep icons a little bigger for clarity */
+}

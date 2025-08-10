@@ -1,0 +1,50 @@
+export default [
+    {
+        "id": "6897121e47c85f5959d9ab5c",
+        "userId": "134256",
+        "solanceTo": null,
+        "rate": 0.7471,
+        "amountSell": "1000",
+        "amountBuy": "989.10",
+        "solanceFrom": null,
+        "timePlaced": "2025-08-09T10:17:18.734",
+        "beneficiaryIBAN": "IRL7865466789",
+        "originatingCountry": "FR",
+        "paymentRef": "3456893",
+        "invoiceNumber": "12345",
+        "purposeRef": "invoice payment",
+        "invoicePayment": null
+    },
+    {
+        "id": "6897129347c85f5959d9ab5d",
+        "userId": "136",
+        "solanceTo": null,
+        "rate": 0.7471,
+        "amountSell": "1000",
+        "amountBuy": "989.10",
+        "solanceFrom": null,
+        "timePlaced": "2025-08-09T10:19:15.575",
+        "beneficiaryIBAN": "IRL7865466789",
+        "originatingCountry": "FR",
+        "paymentRef": "3456893",
+        "invoiceNumber": "12345",
+        "purposeRef": "invoice payment",
+        "invoicePayment": "788665"
+    },
+    {
+        "id": "689712b947c85f5959d9ab5e",
+        "userId": "137",
+        "solanceTo": "GBP",
+        "rate": 0.7471,
+        "amountSell": "1000",
+        "amountBuy": "989.10",
+        "solanceFrom": "EUR",
+        "timePlaced": "2025-08-09T10:19:53.668",
+        "beneficiaryIBAN": "IRL7865466789",
+        "originatingCountry": "FR",
+        "paymentRef": "3456893",
+        "invoiceNumber": "12345",
+        "purposeRef": "invoice payment",
+        "invoicePayment": "788665"
+    }
+]

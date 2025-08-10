@@ -1,0 +1,47 @@
+.sidenav {
+    background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 90vh;
+    padding: 0.8rem; /* slightly smaller padding */
+    border-right: 1px solid #dee2e6;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+    font-size: 0.9rem; /* smaller text */
+}
+
+.sidenav .nav-link {
+    color: #333;
+    padding: 0.5rem 0.8rem; /* smaller height */
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.sidenav .nav-link i {
+    font-size: 1rem; /* smaller icons */
+    margin-right: 0.5rem;
+}
+
+.sidenav .nav-link:hover {
+    background-color: #dee2e6; /* lighter grey hover */
+    transform: translateX(3px);
+}
+
+.sidenav .nav-link.active {
+    background-color: #3a73a5; /* grey active background */
+    color: white !important;
+    font-weight: 600;
+    box-shadow: 0 1px 4px rgba(74, 127, 174, 0.4); /* subtle grey shadow */
+}
+
+.sidenav .nav-link.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10%;
+    height: 80%;
+    width: 4px;
+    background-color: white; /* left stripe */
+    border-radius: 0 4px 4px 0;
+}

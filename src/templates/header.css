@@ -1,0 +1,33 @@
+.navbar {
+    background-color: #3a73a5 !important;  /* medium-light grey */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* a bit stronger shadow */
+}
+
+.navbar .navbar-brand {
+    color: #e7e9ea !important;  /* dark text */
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.navbar .navbar-brand:hover {
+    color: #212529 !important;  /* hover color */
+}
+
+.form-control.form-control-sm {
+    border-radius: 6px;
+    border: 1px solid #adb5bd;
+    font-size: 0.9rem;
+    background-color: white;
+}
+
+.btn-light {
+    background-color: white !important;
+    color: #27292b !important;
+    border: 1px solid #adb5bd !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-light:hover {
+    background-color: #dee2e6 !important;
+    color: #212529 !important;
+}
