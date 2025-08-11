@@ -8,11 +8,18 @@ export default function PaymentContainer() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`${config.apiBaseUrl}/Payment`)
-      .then(res => res.json())
-      .then(setData)
-      .catch(err => setError(err.message))
-      .finally(() => setLoading(false));
+    const basicAuth = 'Basic ' + btoa(`${config.username}:${config.password}`);
+
+    fetch(`${config.apiBaseUrl}/payment`, {
+      headers: { 'Authorization': basicAuth }
+    })
+        .then(res => {
+          if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+          return res.json();
+        })
+        .then(setData)
+        .catch(err => setError(err.message))
+        .finally(() => setLoading(false));
   }, []);
 
   if (loading) return <p>Loading...</p>;

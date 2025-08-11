@@ -1,5 +1,7 @@
 const config = {
-    apiBaseUrl: "http://3.215.153.105:80"
+    apiBaseUrl: "http://34.224.32.22:80",
+    username:"bob",
+    password:"bob"
 };
 
 export default config;

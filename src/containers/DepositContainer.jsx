@@ -8,8 +8,15 @@ export default function DepositContainer() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch(`${config.apiBaseUrl}/Deposite`)
-            .then(res => res.json())
+        const basicAuth = 'Basic ' + btoa(`${config.username}:${config.password}`);
+
+        fetch(`${config.apiBaseUrl}/deposit`, {
+            headers: { 'Authorization': basicAuth }
+        })
+            .then(res => {
+                if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+                return res.json();
+            })
             .then(setData)
             .catch(err => setError(err.message))
             .finally(() => setLoading(false));
